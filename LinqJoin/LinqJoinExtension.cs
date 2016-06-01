@@ -35,7 +35,7 @@ namespace LinqJoin
                 select result(right, i);
         }
 
-        public static IEnumerable<TResult> FullOuterJoinJoin<TSource, TInner, TKey, TResult>(
+        public static IEnumerable<TResult> FullOuterJoin<TSource, TInner, TKey, TResult>(
             this IEnumerable<TSource> source,
             IEnumerable<TInner> inner,
             Func<TSource, TKey> pk,
