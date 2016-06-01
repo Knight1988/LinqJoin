@@ -80,7 +80,7 @@ namespace LinqJoin
                 select result(right, i);
         }
 
-        public static IEnumerable<TResult> FulltExcludingJoin<TSource, TInner, TKey, TResult>(
+        public static IEnumerable<TResult> FullExcludingJoin<TSource, TInner, TKey, TResult>(
             this IEnumerable<TSource> source,
             IEnumerable<TInner> inner,
             Func<TSource, TKey> pk,
